@@ -25,15 +25,38 @@
             </ul>
         </nav>
         </div>
+        <script>
+            //alert("head");
+            //console.log("head");
+            function setSize100()
+            {
+                document.getElementById("photo").style.width = "100px";
+
+            }
+            function setSize200()
+            {
+                document.getElementById("photo").style.width = "200px";
+
+            }
+            function setSize300()
+            {
+                document.getElementById("photo").style.width = "300px";
+
+            }
+            </script>
     </header>
     <main>
         <div class="wrapper main">
         <h1>Фото</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid recusandae dolorem rerum exercitationem. Tenetur, beatae optio ab provident, similique iste tempora libero nemo vitae unde eius repudiandae eaque, nesciunt quasi!</p>
+        <button onclick="setSize100()">100px</button>
+        <button onclick="setSize200()">200px</button>
+        <button onclick="setSize300()">300px</button>
     <article>
+        
             <div>
                 <p>Bored Ape</p>
-                <img src="imege/Bored Ape.png" alt="Bored" width="200">
+                <img src="imege/Bored Ape.png" alt="Bored" id="photo">
             </div>
             <div>
                 <p>Heart Glasses</p>
@@ -55,7 +78,7 @@
                 <p>Devil</p>
                 <img src="imege/Devil.jpg" alt="Devil" width="200">
             </div>
-        </article>
+    </article>
     </div>
     </main>
     

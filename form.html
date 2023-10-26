@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        //alert("head");
+        //console.log("head");
+        function setcolor()
+        {
+            document.getElementById("title_h2").style.backgroundColor = "red";
+        }
+        </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Задание 1</title>
 </head>
 <body>
-    <header>
+    <script>
+        //alert("Начало");
+        //console.log("Начало");
+        //document.write("Начало");
+    </script>
+    <header onclick="setcolor()">
         <div class="wrapper">
-        <h2>
-            Веб-технологии
-        </h2>
+            <h2 id="title_h2">  Веб-технологии </h2>      
         <div class="header-img">
             <img src="imege/Monkey.jpeg" alt="Логотип" width="300">
         </div>
@@ -96,6 +107,12 @@
         </div>
         </div>
     </footer>
+    <script>
+        //alert("Конец");
+        //console.log("Конец");
+        //document.write("Конец");
+        //document.getElementById("title_h2").innerText = "Привет";
+    </script>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
