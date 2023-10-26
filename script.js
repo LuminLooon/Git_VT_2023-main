@@ -1,2 +1,5 @@
-text.value = localStorage.getItem('text');
-localStorage.setItem('text', text.value);
+area.value = localStorage.getItem('area');
+area.oninput = () =>  
+{ 
+  localStorage.setItem('area', area.value) 
+};
