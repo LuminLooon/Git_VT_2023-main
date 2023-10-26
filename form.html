@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Задание 1</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+        <h2>
+            Веб-технологии
+        </h2>
+        <div class="header-img">
+            <img src="imege/Monkey.jpeg" alt="Логотип" width="300">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="index.html">Резюме</a></li>
+                <li><a href="index.html">Компентенции</a></li>
+                <li><a href="index.html">Фото</a></li>
+                <li><a href="form.html">Форма</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main_form>
+        <div class="form_flex">
+        <h1>Опрос</h1>
+        <div>
+            <div>
+                <div>Как Вам удобно получить ответ:</div>
+                <label for="c_mail">
+                <input type="radio" name="com_tion" id="c_mail"> По почте </label>
+                <br>
+                <label for="c_tel">
+                <input type="radio" name="com_tion" id="c_tel"> По телефону
+                </label><br>
+                <label for="c_none">
+                <input type="radio" name="com_tion" id="c_none"> Не получать ответ
+                </label><br>
+            </div>
+            <div>
+                <label for="theme">
+                Укажите тему вопроса
+                </label><br>
+                <select name="theme" id="theme">
+                <option value="work">Работа</option>
+                <option value="cooperation">Сотрудничество</option>
+                <option value="personal">Личное</option>
+                </select>
+            </div>
+            <div>
+                <div> И еще один вопрос?</div>
+                <label for="chb1">
+                <input type="checkbox" name="chb1" id="chb1">может так
+                </label><br>
+                <label for="chb2">
+                <input type="checkbox" name="chb2" id="chb2">или не так
+                </label><br>
+                <label for="chb2">
+                <input type="checkbox" name="chb3" id="chb3">иначе
+                </label><br>
+            </div>
+            <div>
+                <label for="email">Введите адрес почты</label>
+                <input type="email" name="email" id="email">
+             </div>
+            <div>
+                <label for="tel">Введите номер телефона</label>
+                <input type="tel" name="tel" id="tel">
+            </div>
+                <div>Ваш вопрос:</div>
+            <div>
+                <textarea cols="20"></textarea>
+            </div> 
+        </div>
+        <div>
+            <form action="" method="get">
+                <input type="submit" value="Отправить запрос">
+                <input type="submit" value="Очистить поля">
+            </form>
+        </div>
+    </div>
+    </main>
+   
+    <footer>
+        <div class = "wrapper footer-flex">
+        <h6>2071,Агафонов Даниил</h6>
+        <div>
+            <a href="https://t.me/Luminlooon" target="_blank"><img src="imege/tg.png" alt="телеграмм" width="55"></a>
+            <a href="https://github.com/LuminLooon" target="_blank"><img src="imege/git.png" alt="GitHub" width="55"></a>
+            <a href="https://vk.com/luminlooon" target="_blank"><img src="imege/vk.png" alt="Вконтакте" width="55"></a>
+        </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
