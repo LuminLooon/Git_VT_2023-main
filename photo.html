@@ -45,7 +45,7 @@
             }
             </script>
     </header>
-    <main>
+    <main class="index_main">
         <div class="wrapper main">
         <h1>Фото</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid recusandae dolorem rerum exercitationem. Tenetur, beatae optio ab provident, similique iste tempora libero nemo vitae unde eius repudiandae eaque, nesciunt quasi!</p>
@@ -80,6 +80,13 @@
             </div>
     </article>
     </div>
+
+    <div class="theme-buttons">
+        <button id="lightModeButton">Светлая</button>
+        <button id="darkModeButton">Тёмная</button>
+    </div>
+
+
     </main>
     
     <footer>
@@ -92,5 +99,26 @@
         </div>
         </div>
     </footer>
+
+    <script>
+        const lightModeButton = document.getElementById('lightModeButton');
+        const darkModeButton = document.getElementById('darkModeButton');
+        const body = document.body;
+        const main = document.querySelector('.index_main');
+
+        lightModeButton.addEventListener('click', () => {
+            body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
+            main.classList.remove('dark-mode');
+            main.classList.add('light-mode');
+        });
+
+        darkModeButton.addEventListener('click', () => {
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
+            main.classList.remove('light-mode');
+            main.classList.add('dark-mode');
+        });
+    </script>
 </body>
 </html>

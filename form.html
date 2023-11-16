@@ -33,6 +33,7 @@
                 <li><a href="index.html">Компентенции</a></li>
                 <li><a href="index.html">Фото</a></li>
                 <li><a href="form.html">Форма</a></li>
+                <li><a href="form2.html">Форма2</a></li>
             </ul>
         </nav>
         </div>
@@ -42,62 +43,60 @@
         <h1>Опрос</h1>
         <div>
             <div>
-                <div>Как Вам удобно получить ответ:</div>
-                <label for="c_mail">
-                <input type="radio" name="com_tion" id="c_mail"> По почте </label>
-                <br>
-                <label for="c_tel">
+              <div>Как Вам удобно получить ответ:</div>
+              <label for="c_mail">
+                <input type="radio" name="com_tion" id="c_mail"> По почте
+              </label><br>
+              <label for="c_tel">
                 <input type="radio" name="com_tion" id="c_tel"> По телефону
-                </label><br>
-                <label for="c_none">
+              </label><br>
+              <label for="c_none">
                 <input type="radio" name="com_tion" id="c_none"> Не получать ответ
-                </label><br>
+              </label><br>
             </div>
             <div>
-                <label for="theme">
+              <label for="theme">
                 Укажите тему вопроса
-                </label><br>
-                <select name="theme" id="theme">
+              </label><br>
+              <select name="theme" id="theme">
                 <option value="work">Работа</option>
                 <option value="cooperation">Сотрудничество</option>
                 <option value="personal">Личное</option>
-                </select>
+              </select>
             </div>
             <div>
-                <div> И еще один вопрос?</div>
-                <label for="chb1">
+              <div> И еще один вопрос?</div>
+              <label for="chb1">
                 <input type="checkbox" name="chb1" id="chb1">может так
-                </label><br>
-                <label for="chb2">
+              </label><br>
+              <label for="chb2">
                 <input type="checkbox" name="chb2" id="chb2">или не так
-                </label><br>
-                <label for="chb2">
+              </label><br>
+              <label for="chb3">
                 <input type="checkbox" name="chb3" id="chb3">иначе
-                </label><br>
+              </label><br>
             </div>
             <div>
-                <label for="email">Введите адрес почты</label>
-                <input type="email" name="email" id="email">
-             </div>
-            <div>
-                <label for="tel">Введите номер телефона</label>
-                <input type="tel" name="tel" id="tel">
+              <label for="email">Введите адрес почты</label>
+              <input type="email" name="email" id="email">
             </div>
-                <div>Ваш вопрос:</div>
             <div>
-                <textarea cols="20"></textarea>
-            </div> 
-        </div>
-        <div>
-            <form action="" method="get">
-                <input type="submit" value="Отправить запрос">
-                <input type="submit" value="Очистить поля">
-            </form>
-        </div>
+              <label for="tel">Введите номер телефона</label>
+              <input type="tel" name="tel" id="tel">
+            </div>
+            <div>Ваш вопрос:</div>
+            <div>
+              <textarea id="question" cols="20"></textarea>
+            </div>
+            <div>
+              <input type="button" value="Отправить запрос" id="submit-btn">
+              <input type="button" value="Очистить поля" id="clear-btn">
+            </div>
+          </div>
     </div>
-    </main>
-   
     <footer>
+    </main>
+
         <div class = "wrapper footer-flex">
         <h6>2071,Агафонов Даниил</h6>
         <div>

@@ -16,7 +16,41 @@ body
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: background-color 0.5s;
 }
+
+h2 {
+    color: aqua;
+    font-size: large;
+}
+body.light-mode {
+    background-color: blanchedalmond;
+    color: #333;
+}
+body.dark-mode {
+    background-color: #333;
+    color: #f8f8f8;
+}
+.index_main.light-mode {
+    background-color: blanchedalmond;
+}
+.index_main.dark-mode {
+    background-color: #333;
+}
+.theme-buttons {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 5px solid rgb(59, 45, 121);
+    color: rgb(154, 148, 185);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    padding: 17px 34px 17px 39px;
+    cursor: pointer;
+}
+
 main_form
 {
     background-color: rgb(211, 255, 229);
